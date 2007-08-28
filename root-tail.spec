@@ -49,7 +49,6 @@ EOF
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=Root-Tail
 Comment=Root-tail prints text directly to a root window
 Exec=%_bindir/%{name} -g 80x25+100+50 -font fixed /var/log/messages,black
