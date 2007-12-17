@@ -8,7 +8,6 @@ Version:   %{version}
 Release:   %{release}
 Source:    http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.bz2
 URL:	   http://www.goof.com/pcg/marc/root-tail.html 
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: X11-devel
 BuildRequires: rman
 BuildRequires: imake
