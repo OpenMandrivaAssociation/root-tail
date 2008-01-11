@@ -39,13 +39,6 @@ cp root-tail ${RPM_BUILD_ROOT}%{_bindir}
 cp root-tail.man ${RPM_BUILD_ROOT}%{_mandir}/man1/root-tail.1
 
 # Menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}): command="%_bindir/%{name} -g 80x25+100+50 -font fixed /var/log/messages,black" \
-needs="X11" \
-section="System/Monitoring" \
-title="Root-tail" longtitle="Root-tail prints text directly to a root window" xdg="true"
-EOF
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -82,7 +75,6 @@ rm -rf %buildroot
 %attr(755,root,root) 
 %{_bindir}/*
 %{_mandir}/man1/*
-%{_menudir}/*
 %_datadir/applications/mandriva-*
 #%{_iconsdir}/%{name}.png
 #%{_liconsdir}/%{name}.png
