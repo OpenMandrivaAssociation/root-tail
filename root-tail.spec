@@ -1,6 +1,6 @@
 %define name root-tail
 %define version 1.2
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary:   Root-tail prints text directly to an X11 root window
 Name:      %{name}
