@@ -1,6 +1,6 @@
 %define name root-tail
 %define version 1.2
-%define release %mkrel 11
+%define release  12
 
 Summary:   Root-tail prints text directly to an X11 root window
 Name:      %{name}
@@ -8,7 +8,6 @@ Version:   %{version}
 Release:   %{release}
 Source:    http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.bz2
 URL:	   http://www.goof.com/pcg/marc/root-tail.html 
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xext)
 BuildRequires: rman
