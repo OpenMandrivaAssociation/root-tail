@@ -9,8 +9,8 @@ Release:   %{release}
 Source:    http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.bz2
 URL:	   http://www.goof.com/pcg/marc/root-tail.html 
 BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: libx11-devel
-BuildRequires: libxext-devel
+BuildRequires: pkgconfig(x11)
+BuildRequires: pkgconfig(xext)
 BuildRequires: rman
 BuildRequires: imake
 BuildRequires: gccmakedep
