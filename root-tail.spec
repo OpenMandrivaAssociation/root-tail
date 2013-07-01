@@ -2,7 +2,7 @@
 %define version 1.2
 %define release  12
 
-Summary:   Root-tail prints text directly to an X11 root window
+Summary:   Prints text directly to an X11 root window
 Name:      %{name}
 Version:   %{version}
 Release:   %{release}
