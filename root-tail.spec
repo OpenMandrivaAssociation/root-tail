@@ -1,6 +1,6 @@
 %define name root-tail
 %define version 1.2
-%define release  12
+%define release   13
 
 Summary:   Prints text directly to an X11 root window
 Name:      %{name}
@@ -39,8 +39,8 @@ cp root-tail ${RPM_BUILD_ROOT}%{_bindir}
 cp root-tail.man ${RPM_BUILD_ROOT}%{_mandir}/man1/root-tail.1
 
 # Menu
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
-cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
+mkdir -p %{buildroot}%{_datadir}/applications
+cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=Root-Tail
 Comment=Root-tail prints text directly to a root window
