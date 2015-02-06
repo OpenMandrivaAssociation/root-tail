@@ -1,6 +1,6 @@
 %define name root-tail
 %define version 1.2
-%define release   13
+%define release   14
 
 Summary:   Prints text directly to an X11 root window
 Name:      %{name}
