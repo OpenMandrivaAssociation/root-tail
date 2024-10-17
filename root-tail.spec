@@ -7,7 +7,7 @@ Name:      %{name}
 Version:   %{version}
 Release:   %{release}
 Source:    http://www.goof.com/pcg/marc/data/%{name}-%{version}.tar.bz2
-URL:	   http://www.goof.com/pcg/marc/root-tail.html 
+URL:	   https://www.goof.com/pcg/marc/root-tail.html 
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xext)
 BuildRequires: rman
